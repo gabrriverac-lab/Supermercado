@@ -1,9 +1,6 @@
 import random
 
-
-
 #generador de codigo    
-
 
 def generar_codigo(nombre):
     letras = ""
@@ -19,9 +16,6 @@ def generar_codigo(nombre):
 
     codigo_final = letras + str(numero_aleatorio)
     return codigo_final
-
-
-
 
 
 supermercado = {
@@ -53,7 +47,6 @@ for clave_nombre in supermercado:
     supermercado_actualizado[codigo_real] = datos_producto       #Arreglar orden de como se mnuestran el print
 
 
-
 #eliminar el producto, igual arreglar el orden de como se muestra
 
 
@@ -67,8 +60,6 @@ def quitar_producto(nombre):
 
     else:
         print(f"El producto *{nombre}* no se ha encontrado en la base de datos")
-
-
 
 
 #mostrar el inventario disponible, arreglar la actualizacion no se muestran los porductos agregados recientemente 
