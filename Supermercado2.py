@@ -1,6 +1,6 @@
 import random
 
-#generador de codigo    
+
 
 def generar_codigo(nombre):
     letras = ""
@@ -44,10 +44,9 @@ for clave_nombre in supermercado:
 
     datos_producto["codigo"] = codigo_real
 
-    supermercado_actualizado[codigo_real] = datos_producto       #Arreglar orden de como se mnuestran el print
+    supermercado_actualizado[codigo_real] = datos_producto    
 
 
-#eliminar el producto, igual arreglar el orden de como se muestra
 
 
 def quitar_producto(nombre):
@@ -62,7 +61,7 @@ def quitar_producto(nombre):
         print(f"El producto *{nombre}* no se ha encontrado en la base de datos")
 
 
-#mostrar el inventario disponible, arreglar la actualizacion no se muestran los porductos agregados recientemente 
+
 
 def mostrar_stock(inventario):
     print("Stock de inventario")
@@ -94,7 +93,7 @@ while encendido:
     
 
 
-#Orden todavia bo arreglado
+
 
     elif opcion == "1":
 
@@ -104,7 +103,7 @@ while encendido:
 
             print(f"Producto: {clave_nombre} = Código asignado: {codigo_listo}")
 
-#Arreglado
+
     elif opcion == "2":
         print("Agregar producto")
         
@@ -159,7 +158,7 @@ while encendido:
         quitar_producto(nombre_eliminar)
 
 
-#Ahora si se muestran
+
     elif opcion == "4":
 
         mostrar_stock(supermercado)
